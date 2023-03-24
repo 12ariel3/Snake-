@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.game-container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #800080,#03022d, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000000;
+    background-color: #000000;
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+
+.snake{
+    background-color: #0dff00;
+}
+
+.apple{
+    background-color: #a80303;
+}
+
+.title{
+    position: relative;
+    top:-80px;
+    font-size: 50px;
+    font-family: monospace;
+    color: #8400ff;
+    text-shadow: #8d029f 0px 0px 1px;
+}
+
+.score-h3{
+    position: relative;
+    top:-40px;
+    font-size: 35px;
+    font-family: monospace;
+    color: #8400ff;
+    text-shadow: #8d029f 0px 0px 1px;
+}
+
+.score-span{
+    position: relative;
+    top:3px;
+    font-size: 40px;
+    font-family: monospace;
+    color: #8400ff;
+    text-shadow: #9401a7 0px 0px 1px;
+}
+
+.bestScore{
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: monospace;
+    color: #8400ff;
+    text-shadow: #8d029f 0px 0px 1px;
+}
+
+.bestScoreSpan{
+    font-size: 40px;
+    font-family: monospace;
+    color: #8400ff;
+    text-shadow: #9401a7 0px 0px 1px;
+}
+
+.start{
+    font-size: 26px;
+    font-family: monospace;
+    padding: 18px 36px;
+    border-radius: 15px;
+    background: linear-gradient(0deg,#000000,#03022d, #800080);
+    color: #fcf0ff;
+    outline: none;
+    border: 1px solid #800080;
+    margin-top: 60px;
+}
+
+.start:hover{
+    background: linear-gradient(0deg,#000000,#04033c, #4f034f);
+    color: #d391eb;
+    border: 1px solid #5b025b;
+}
+
+.start:active{
+    background: linear-gradient(0deg, #800080,#03022d, #000000);
+    color: #f0ffff;
+    border: 1px solid #900190;
+}
+
+.gameOver{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(28, 0, 22, 0.5);
+    color:#52017d;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0px 10px 1px #710071;
+}
